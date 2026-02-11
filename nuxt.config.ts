@@ -10,7 +10,6 @@ export default defineNuxtConfig({
       driver: 'neon-http',
       casing: 'snake_case',
     },
-    kv: true,
   },
 
   compatibilityDate: '2026-02-01',
