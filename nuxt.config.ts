@@ -1,8 +1,19 @@
 export default defineNuxtConfig({
-  compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
   modules: [
-    '@onmax/nuxt-better-auth',
-    '@nuxthub/core'
-  ]
+    '@nuxthub/core',
+    '@onmax/nuxt-better-auth'
+  ],
+
+  hub: {
+    db: {
+      dialect: 'postgresql',
+      driver: 'neon-http',
+      casing: 'snake_case',
+    },
+    kv: true,
+  },
+
+  compatibilityDate: '2026-02-01',
+
+  devtools: { enabled: true },
 })
